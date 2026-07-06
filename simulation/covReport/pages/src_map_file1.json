@@ -1,6 +1,6 @@
 var g_data = {'dummy':null,
+'3':'../design/ram.v',
 '7':'monitor.sv',
-'3':'ram.v',
 '6':'ram_driver.sv',
 '10':'ram_environment.sv',
 '5':'ram_generator.sv',

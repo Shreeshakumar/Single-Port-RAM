@@ -9,7 +9,7 @@ data:[
 }
 }
 },
-z5:{prod:'Questa',reporttype:'du',duname:'work.ram',lang:'Verilog',src:{z:'ram.v'},summaryTables:{loctable:{
+z5:{prod:'Questa',reporttype:'du',duname:'work.ram',lang:'Verilog',src:{z:'../design/ram.v'},summaryTables:{loctable:{
 headers:['Coverage Type', 'Bins', 'Hits', 'Misses', 'Weight', '% Hit', 'Coverage'],
 totalhits:{class:'odd_r', val:'97.01%'},avgw:{class:'bgYellow', val:'87.50%'},
 data:[

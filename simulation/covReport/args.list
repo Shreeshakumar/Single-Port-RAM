@@ -1,0 +1,5 @@
+-html
+../simulation/ucdb_file.ucdb
+-htmldir
+../simulation/covReport
+-details

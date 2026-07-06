@@ -1,5 +1,5 @@
+../design/ram.v
 monitor.sv
-ram.v
 ram_driver.sv
 ram_environment.sv
 ram_generator.sv

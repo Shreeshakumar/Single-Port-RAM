@@ -1,4 +1,4 @@
-`include "ram.v" 
+`include "../design/ram.v" 
 `include "ram_package.sv" 
 `include "ram_interface.sv" 
 
