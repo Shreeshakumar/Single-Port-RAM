@@ -1,0 +1,138 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/fetools/work_area/frontend/Batch_11/shreeshakumar/DV_workspace/projects/RAM
+T_opt
+!s110 1783374086
+VBbd@b63jb_nV:HF`B^AJH3
+Z1 04 7 4 work ram_top fast 0
+=1-6805caf5892e-6a4c2105-d8918-32f84
+Z2 o-quiet -auto_acc_if_foreign -work work +acc=npr
+Z3 tCvgOpt 0
+n@_opt
+Z4 OE;O;10.6c;65
+T_opt1
+!s110 1783336018
+VC@aC6U5AKa8NaT19?R26>2
+R1
+=1-6805caf5892e-6a4b8c52-14174-c440
+R2
+R3
+n@_opt1
+R4
+R0
+vram
+Z5 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z6 !s110 1783374081
+!i10b 1
+!s100 4c1JLf?5EJT;Vk^zSCzcX1
+IDajIkcb=EDQEWggX;2U0m3
+Z7 VDg1SIo80bB@j0V0VzS_@n1
+Z8 !s105 ram_top_sv_unit
+S1
+R0
+w1783328701
+8ram.v
+Fram.v
+L0 12
+Z9 OE;L;10.6c;65
+r1
+!s85 0
+31
+Z10 !s108 1783374081.000000
+Z11 !s107 ram_interface.sv|ram_test.sv|ram_environment.sv|ram_scoreboard.sv|ram_reference_model.sv|monitor.sv|ram_driver.sv|ram_generator.sv|ram_transaction.sv|defines.sv|ram_package.sv|ram.v|ram_top.sv|
+Z12 !s90 -sv|+acc|+cover|+fcover|-l|log_file.log|ram_top.sv|
+!i113 0
+Z13 !s102 +cover
+Z14 o-sv +acc +cover +fcover -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R3
+Yram_inf
+R5
+R6
+!i10b 1
+!s100 f<c:?Gca2dAbLn^I<G8`01
+IMhf^ij9_OI]j6PoI7H6:N0
+R7
+R8
+S1
+R0
+w1783368789
+8ram_interface.sv
+Fram_interface.sv
+L0 1
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!i113 0
+R13
+R14
+R3
+Xram_package
+!s115 ram_inf
+R5
+R6
+!i10b 1
+!s100 HOhbof46I[PL<mc^TI<[K3
+I5kRdYTSL4P^fMM_nV^KzM2
+V5kRdYTSL4P^fMM_nV^KzM2
+S1
+R0
+w1783374072
+Fram_package.sv
+Fdefines.sv
+Fram_transaction.sv
+Fram_generator.sv
+Fram_driver.sv
+Fmonitor.sv
+Fram_reference_model.sv
+Fram_scoreboard.sv
+Fram_environment.sv
+Fram_test.sv
+L0 1
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!i113 0
+R13
+R14
+R3
+vram_top
+R5
+DXx4 work 11 ram_package 0 22 5kRdYTSL4P^fMM_nV^KzM2
+R6
+!i10b 1
+!s100 zfC7<KAcRh<4DD`:1I^lS0
+I26UR;M3gY5A0GkNOYZNVX0
+R7
+R8
+S1
+R0
+w1783373980
+8ram_top.sv
+Fram_top.sv
+L0 5
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!i113 0
+R13
+R14
+R3
