@@ -18,7 +18,7 @@ class monitor;
 		for(int i=0; i<`num_of_trans; i++ )
 		begin	
 			trans_obj = new();
-			@(vinf.cb_monitor);
+			//@(vinf.cb_monitor);
 			begin
 				trans_obj.data_out = vinf.cb_monitor.data_out; 
 				trans_obj.address = vinf.cb_monitor.address;
@@ -26,6 +26,7 @@ class monitor;
 			$display("MONITOR TO SCOREBOARD data_out=%0d address=%0d",trans_obj.data_out,trans_obj.address,$time); 
 			mbx_ms.put(trans_obj);
 			cg_mon.sample();
+			@(vinf.cb_monitor);
         	//$display("OUTPUT FUNCTIONAL COVERAGE = %0d", cg_mon.get_coverage());
    		end
 	endtask
