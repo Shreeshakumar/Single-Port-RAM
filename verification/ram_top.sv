@@ -14,12 +14,12 @@ module ram_top();
   
   	initial begin 
     reset = 0;
-    repeat(4) @(posedge clk);
+    repeat(2) @(posedge clk);
     reset = 1;
     repeat(50) @(posedge clk);
     reset = 0;
-    repeat(3) @(posedge clk);
-    reset = 1;
+    //repeat(3) @(posedge clk);
+    //reset = 1;
     end 
 
 	ram_inf intrf(clk,reset); 
@@ -28,7 +28,7 @@ module ram_top();
 
 	initial begin 
 		ram_test test; 
-		test = new(intrf.DRIVER, intrf.MONITOR ); 
+		test = new(intrf.DRIVER, intrf.MONITOR, intrf.REFERENCE ); 
 		test.run(); 
       	
 		$finish;

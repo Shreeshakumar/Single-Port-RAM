@@ -2,7 +2,7 @@ class environment;
 
 	virtual ram_inf.DRIVER vif_drv; 
 	virtual ram_inf.MONITOR vif_mon; 
-	//virtual ram_inf.REFERENCE ref_vif; 
+	virtual ram_inf.REFERENCE vif_ref; 
 
 	mailbox #(transaction) mbx_gd; 
 	mailbox #(transaction) mbx_dr; 
@@ -15,10 +15,10 @@ class environment;
 	reference_model     	reff; 
 	scoreboard        		scb; 
 
-	function new (virtual ram_inf vif_drv, virtual ram_inf vif_mon ); 
+	function new (virtual ram_inf vif_drv, virtual ram_inf vif_mon, virtual ram_inf vif_ref ); 
 		this.vif_drv = vif_drv; 
 		this.vif_mon = vif_mon; 
-		//this.ref_vif = ref_vif; 
+		this.vif_ref = vif_ref; 
 	endfunction 
 
 	task build(); 
@@ -31,7 +31,7 @@ class environment;
 		gen = new(mbx_gd); 
 		drv = new(mbx_gd, mbx_dr, vif_drv ); 
 		mon = new(mbx_ms, vif_mon); 
-		reff = new(mbx_dr, mbx_rs ); 
+		reff = new(mbx_dr, mbx_rs, vif_ref ); 
 		scb = new(mbx_rs, mbx_ms); 
 	end 
 	endtask 

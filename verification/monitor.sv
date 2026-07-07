@@ -23,10 +23,10 @@ class monitor;
 				trans_obj.data_out = vinf.cb_monitor.data_out; 
 				trans_obj.address = vinf.cb_monitor.address;
 			end
-			$display("MONITOR PASSING THE DATA TO SCOREBOARD data_out=%d",trans_obj.data_out,$time); 
+			$display("MONITOR TO SCOREBOARD data_out=%0d address=%0d",trans_obj.data_out,trans_obj.address,$time); 
 			mbx_ms.put(trans_obj);
 			cg_mon.sample();
-        	$display("OUTPUT FUNCTIONAL COVERAGE = %0d", cg_mon.get_coverage());
+        	//$display("OUTPUT FUNCTIONAL COVERAGE = %0d", cg_mon.get_coverage());
    		end
 	endtask
 

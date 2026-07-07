@@ -21,9 +21,11 @@ class driver;
 	endfunction
 
 	task start();
-		repeat(3) @(vinf.cb_driver);
+		repeat(4) @(vinf.cb_driver);
     	for(int i=0; i<`num_of_trans; i++)
       	begin
+      		$display("/////////////////////////////////////////////////////////////////////////////////////////////////////////////");
+        	$display("/////////////////////////////////////////////////////////////////////////////////////////////////////////////");
         	trans_obj = new();
         	mbx_gd.get(trans_obj);
 			$display("%m Driver ran at iteration %0d",i);
@@ -35,9 +37,8 @@ class driver;
            			vinf.cb_driver.data_in		<=8'bz;  
            			vinf.cb_driver.address		<=0;
            			mbx_dr.put(trans_obj);
-           			@(vinf.cb_driver);      
            			drv_cg.sample();
-               		$display("INPUT FUNCTIONAL COVERAGE = %0d", drv_cg.get_coverage());    
+               		//$display("INPUT FUNCTIONAL COVERAGE = %0d", drv_cg.get_coverage());    
            		end
         	else
           		begin
@@ -47,16 +48,14 @@ class driver;
                		vinf.cb_driver.data_in		<=trans_obj.data_in;  
                		vinf.cb_driver.address		<=trans_obj.address;
                		mbx_dr.put(trans_obj);
-					@(vinf.cb_driver);
- 
                		drv_cg.sample();
-               		$display("INPUT FUNCTIONAL COVERAGE = %0d", drv_cg.get_coverage());
+               		//$display("INPUT FUNCTIONAL COVERAGE = %0d", drv_cg.get_coverage());
         		end
         		$display("******** driver_sending **********");
-				$display("write_enb = %d",trans_obj.write_enb);
-				$display("read_enb  = %d",trans_obj.read_enb);
-				$display("ddata_in  = %d",trans_obj.data_in);
-				$display("address   = %d",trans_obj.address);
+				$display("write_enb = %0d",trans_obj.write_enb);
+				$display("read_enb  = %0d",trans_obj.read_enb);
+				$display("data_in   = %0d",trans_obj.data_in);
+				$display("address   = %0d",trans_obj.address);
 				$display("*********************************");
      	end
   	endtask
