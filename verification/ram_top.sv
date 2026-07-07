@@ -18,8 +18,8 @@ module ram_top();
     reset = 1;
     repeat(50) @(posedge clk);
     reset = 0;
-    //repeat(3) @(posedge clk);
-    //reset = 1;
+    repeat(3) @(posedge clk);
+    reset = 1;
     end 
 
 	ram_inf intrf(clk,reset); 
