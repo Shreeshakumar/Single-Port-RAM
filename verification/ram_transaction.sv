@@ -1,7 +1,7 @@
 class transaction;
 
 	rand bit [7:0]	data_in;
-	rand bit [4:0]	address;
+	randc bit [4:0]	address;
 	rand bit 	 	write_enb, read_enb;
 
 	bit [7:0]		data_out;

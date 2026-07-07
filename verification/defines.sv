@@ -1,2 +1,2 @@
 
-`define num_of_trans 500
+`define num_of_trans 100
