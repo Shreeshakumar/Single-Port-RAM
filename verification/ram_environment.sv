@@ -44,7 +44,7 @@ class environment;
 			scb.start(); 
 			reff.start(); 
 		join 
-		scb.compare(); 
+		scb.summary(); 
 	endtask 
 
 endclass 

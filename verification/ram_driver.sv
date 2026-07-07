@@ -52,6 +52,12 @@ class driver;
                		drv_cg.sample();
                		$display("INPUT FUNCTIONAL COVERAGE = %0d", drv_cg.get_coverage());
         		end
+        		$display("******** driver_sending **********");
+				$display("write_enb = %d",trans_obj.write_enb);
+				$display("read_enb  = %d",trans_obj.read_enb);
+				$display("ddata_in  = %d",trans_obj.data_in);
+				$display("address   = %d",trans_obj.address);
+				$display("*********************************");
      	end
   	endtask
 
