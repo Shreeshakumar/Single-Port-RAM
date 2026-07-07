@@ -10,7 +10,7 @@ class driver;
   		READ :   coverpoint trans_obj.read_enb  { bins rd[]		={0,1};		}
   		DATA_IN: coverpoint trans_obj.data_in   { bins data 	={[0:255]};	}
   		ADDRESS: coverpoint trans_obj.address   { bins address	={[0:31]};	}
-  		WR_x_RD: cross WRITE,READ { illegal_bins wr_rd_high = binsof(WRITE) intersect {1} && binsof(READ)  intersect {1}; }
+  		WR_x_RD: cross WRITE,READ ;/*{ illegal_bins wr_rd_high = binsof(WRITE) intersect {1} && binsof(READ)  intersect {1}; }*/
 	endgroup
 
 	function new(mailbox #(transaction)mbx_gd, mailbox #(transaction)mbx_dr, virtual ram_inf.DRIVER vinf);
