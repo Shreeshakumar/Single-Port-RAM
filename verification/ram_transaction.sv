@@ -7,6 +7,7 @@ class transaction;
 	bit [7:0]		data_out;
 	
 	constraint wr_rd_value {{write_enb,read_enb} inside {[0:3]};	}
+	constraint wr_rd_ve { data_in != 0;	}
 	//constraint wr_rd_not_equal {{write_enb,read_enb} != 2'b11;		}
 
 	virtual function transaction copy();
