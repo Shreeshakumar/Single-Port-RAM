@@ -1,0 +1,1 @@
+[![Coverage_Report](https://img.shields.io/badge/CovReport-FF4136?style=for-the-badge)](https://htmlpreview.github.io/?https://github.com/Shreeshakumar/Single-Port-RAM/blob/main/simulation/covReport/index.html)
