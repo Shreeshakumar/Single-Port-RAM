@@ -1,11 +1,13 @@
-# Single-Port RAM (Random Access Memory)
+[![RTL Design](https://img.shields.io/badge/RTL_Design-0A66C2?style=for-the-badge&logo=verilog&logoColor=white)](...)
 
-[![RTL_Design](https://img.shields.io/badge/RTL_design-FF4136?style=for-the-badge)](/design/ram.v)
+[![Testbench](https://img.shields.io/badge/Testbench-FF9800?style=for-the-badge&logo=siemens&logoColor=white)](...)
 
-[![Status: Verifie](https://img.shields.io/badge/Verificatiton-ram_top.sv-2ECC40?style=for-the-badge)](/verification/ram_top.sv)
+---
 
-[![Coverage_Report](https://img.shields.io/badge/Coverage-Report-B10DC9?style=for-the-badge&logo=codecov&logoColor=white)](https://raw.githack.com/Shreeshakumar/Single-Port-RAM/main/simulation/covReport/index.html)
+[![Coverage](https://img.shields.io/badge/Coverage-100%25-2EA043?style=for-the-badge&logo=codecov&logoColor=white)](...)
 
-[![Documents: Verification_plan](https://img.shields.io/badge/Documents-Verification_Plan-00599C?style=for-the-badge&logo=c&logoColor=white)](https://mirafra2-my.sharepoint.com/:x:/g/personal/shreeshakumar_mirafra2_onmicrosoft_com/IQDoLFwFx-IWR72RzsR1tyv3Aalfcijb1LZHQCM-kMKT1Dk?e=kRcWOr)
+---
 
-[![Documents: Verification_report](https://img.shields.io/badge/Documents-Verification_Report-00599C?style=for-the-badge&logo=c&logoColor=white)](https://mirafra2-my.sharepoint.com/:w:/g/personal/shreeshakumar_mirafra2_onmicrosoft_com/IQDgWO4Stj0rTrE2xYMlgixaAVgXhks1W2myhGikl89pVC8?e=eOcIS8)
+[![Verification Plan](https://img.shields.io/badge/Verification-Plan-005FB8?style=for-the-badge&logo=microsoftonedrive&logoColor=white)](...)
+
+[![Verification Report](https://img.shields.io/badge/Verification-Report-8A2BE2?style=for-the-badge&logo=microsoftword&logoColor=white)](...)
